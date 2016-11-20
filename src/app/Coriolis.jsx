@@ -68,6 +68,7 @@ export default class Coriolis extends React.Component {
     };
 
     Router('', (r) => this._setPage(ShipyardPage, r));
+    Router('/import?', (r) => this._importBuild(r));
     Router('/import/:data', (r) => this._importBuild(r));
     Router('/outfit/:ship/:code?', (r) => this._setPage(OutfittingPage, r));
     Router('/compare/:name?', (r) => this._setPage(ComparisonPage, r));
